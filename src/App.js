@@ -3,10 +3,12 @@ import Countries from "./compnents/Countries";
 
 function App() {
   console.log(23);
+  console.log(Countries);
   return (
 
     <div className="App">
-     <h1>WELCOME</h1>
+     
+     
       <Countries />  
     </div>
   );
