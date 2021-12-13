@@ -59,11 +59,12 @@ useEffect(() => {
 
     
     return (
-        <div className='grid  justify-center'>
-            <div>
-            <h1>WELCOME</h1>
-                {country.map((place,cID)=><div className='w-52 text-l font-player2 bg-blue-300' key={cID}> <p> Currencies:{  place.currencies[0].symbol }</p>   <p>Name: {place.name}</p> <p>Capital:{place.capital}</p> <p>Population:{place.population}  </p> <p className=' '> Languages: {place.languages[0].name} </p> <img  className='h-max'src={place.flag}></img> <Select  onChange={(e)=>changeHandleEvenet(e)} options={options}/> </div>)}
-            </div>
+        <div className='grid grid-cols-1   place-items-center   w-screen  h-screen  place-content-center  '>
+                
+                <h1  className='text-xl'>Welcome  to  rest-api  app</h1>
+                {country.map((place,cID)=><div className='w-52 text-l font-player2 bg-blue-300  ' key={cID}> <p> Currencies:{  place.currencies[0].symbol }</p>   <p>Name: {place.name}</p> <p>Capital:{place.capital}</p> <p>Population:{place.population}  </p> <p className=' '> Languages: {place.languages[0].name} </p> <img  className='h-max'src={place.flag}></img> <Select  onChange={(e)=>changeHandleEvenet(e)} options={options}/> </div>)}
+                
+            
             
         </div>
     )
